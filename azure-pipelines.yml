@@ -42,6 +42,5 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
 
-- task:
--   script: dotnet Build --configuration $(buildConfiguration)
+- script: 'dotnet Build --configuration $(buildConfiguration)'
     displayName: 'dotnet build $(buildConfiguration)'
