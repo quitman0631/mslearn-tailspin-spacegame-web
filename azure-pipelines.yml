@@ -38,7 +38,8 @@ steps:
     projects: '**/*.csproj'
 
 
-dotnet build --configuration Release
+- script: 'dotnet build --configuration Release'
+    displayName: 'Simple build'
 
 - task: DotNetCoreCLI@3
   displayName: 'Build the project - Release'
