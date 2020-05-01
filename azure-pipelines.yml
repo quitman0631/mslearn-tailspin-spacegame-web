@@ -37,7 +37,10 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
 
-- task: DotNetCoreCLI@2
+
+dotnet build --configuration Release
+
+- task: DotNetCoreCLI@3
   displayName: 'Build the project - Release'
   inputs:
     command: 'build'
